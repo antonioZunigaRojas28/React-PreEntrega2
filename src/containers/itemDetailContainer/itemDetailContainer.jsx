@@ -4,14 +4,14 @@ import { useParams } from "react-router-dom"
 
 const ItemDetailContainer=()=>{
     const [product, setProduct] = useState()
-    const {id_producto} = useParams()
+    const {id_item} = useParams()
 
     useEffect(()=>{
-        fetch(`https://fakestoreapi.com/products/${id_producto}`)
+        fetch(`https://fakestoreapi.com/products/${id_item}`)
             .then(res=>res.json())
             .then(json=>setProduct(json))
             .catch(e=>console.error(e))
-    }, [id_producto])
+    }, [id_item])
 
     return(
         <div className="info-producto">
