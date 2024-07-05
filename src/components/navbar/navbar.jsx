@@ -9,17 +9,17 @@ const Navbar=()=>{
                 <p className="logo">MiTienda</p>
             </Link>
             <div className="navbar">
-                <Link to={'/categoria/electronics'}>
-                    <p>Electrodomesticos</p>
+                <Link to={'/categoria/Electrohogar'}>
+                    <p>ElectroHogar</p>
                 </Link>
-                <Link to={'/categoria/jewelery'}>
-                    <p>Joyeria</p>
+                <Link to={'/categoria/Muebles'}>
+                    <p>Muebles</p>
                 </Link>
-                <Link to={`/categoria/men's clothing`}>
-                    <p>Ropa Hombre</p>
+                <Link to={`/categoria/Herramientas`}>
+                    <p>Herramientas</p>
                 </Link>
-                <Link to={`/categoria/women's clothing`}>
-                    <p>Ropa Mujer</p>
+                <Link to={`/categoria/Celulares`}>
+                    <p>Celulares</p>
                 </Link>
                 <p><Cartwidget/></p>
             </div>

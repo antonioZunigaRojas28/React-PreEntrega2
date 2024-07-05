@@ -1,0 +1,52 @@
+.itemCarrito{
+    border: solid 1px white;
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+}
+.itemCarrito img{
+    height: 50px;
+    width: auto;
+}
+.contenedorImagenProductoCarrito{
+    height: 50px;
+}
+.contenedorImagenProductoCarrito img{
+    display: flex;
+    justify-content: center;
+}
+.cantidad{
+    display: flex;
+    justify-content: center;
+}
+.numeroCantidad{
+    width: 40px;
+    text-align: center;
+    border-top: solid 1px green;
+    border-bottom: solid 1px green;
+    padding: 10px;
+}
+.disminuir{
+    padding: 10px;
+    width: 40px;
+    background-color: green;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.aumentar{
+    padding: 10px;
+    width: 40px;
+    background-color: green;
+    color: white;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

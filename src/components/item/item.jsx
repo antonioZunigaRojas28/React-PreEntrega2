@@ -1,7 +1,11 @@
 import './item.css'
 import { Link } from "react-router-dom"
+import { useContext } from 'react'
+import {CartContext} from '../../context/cartContext'
 
 const Item=({id, category, description, image, title, price, stock})=>{
+    const {addItem}=useContext(CartContext)
+
     return(
         <>
             <div className="item">
@@ -10,10 +14,11 @@ const Item=({id, category, description, image, title, price, stock})=>{
                 </figure>
                 <div className='info-producto'>
                     <div>{category}</div>
-                    <div>{title}</div>
-                    <div className='precio'>{price}</div>
+                    <div>{title.slice(0,24)}</div>
+                    <div className='precio'>$ {price}</div>
+                    <button onClick={()=>addItem({id: id, name: title, price: price, quantyti: 1, image: image})}>Agregar a Carrito</button>
                     <Link to={`/item/${id}`}>
-                        <button>Ver Detalle</button>
+                        <button className='botonVerDetalle'>Ver Detalle</button>
                     </Link>
                 </div>
             </div>

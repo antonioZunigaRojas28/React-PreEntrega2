@@ -1,0 +1,36 @@
+.contenedorInput{
+    margin: 20px;
+}
+.contenedorFormulario{
+    margin-top: 20px;
+    padding: 20px;
+    border: solid 1px white;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.subtitulo{
+    margin: 20px;
+    text-align: left;
+}
+input{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+}
+.btn_finalizarCompra{
+    background-color: green;
+    cursor: pointer;
+}
+.contenedorCompraFinalizada{
+    border: solid 1px white;
+    padding: 40px;
+    border-radius: 20px;
+}
+.contenedorCompraFinalizada hr{
+    margin: 20px;
+    width: 100%;
+}
+.codigoCompra{
+    margin-bottom: 40px;
+    font-size: 30px;
+}

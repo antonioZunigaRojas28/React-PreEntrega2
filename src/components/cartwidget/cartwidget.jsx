@@ -1,14 +1,21 @@
-import React from "react";
-import { Avatar, Badge } from 'antd';
+import React, { useContext } from "react";
+import { Badge } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons'
 import './cartwidget.css'
+import { CartContext } from "../../context/cartContext";
+import { Link } from "react-router-dom";
+
 
 const Cartwidget=()=>{
+    const {getQuantytiProducts}=useContext(CartContext)
+    
     return(
       <>
-      <Badge count={8}>
-        <ShoppingCartOutlined className="carrito" />
-      </Badge>
+        <Link to={"/cart"}>
+          <Badge count={getQuantytiProducts()}>
+            <ShoppingCartOutlined className="carrito" />
+          </Badge>
+        </Link>
     </>
     )
 }

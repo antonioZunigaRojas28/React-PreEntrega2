@@ -1,0 +1,13 @@
+.boton{
+    margin: 10px;
+    background: green;
+    width: 300px;
+}
+.contenedorProductosCarrito{
+    margin-top: 80px;
+}
+.importeTotal{
+    margin: 30px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
